@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS projeto;
+USE projeto;
+
+CREATE TABLE IF NOT EXISTS personagem (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(20),
+    classe VARCHAR(10),
+    lvl INT,
+    sexo VARCHAR(15),
+    hp INT,
+    mana INT,
+    gold INT,
+    PRIMARY KEY (id)
+)
+
+INSERT INTO personagem(nome,classe,lvl,sexo,hp,mana,gold)
+VALUES("Durak","Mago",151,"Masculino", 130, 80, 865);
+
+INSERT INTO personagem(nome,classe,lvl,sexo,hp,mana,gold)
+VALUES("Haraf","Guerreiro",82,"Masculino", 80, 140, 365);
+
+INSERT INTO personagem(nome,classe,lvl,sexo,hp,mana,gold)
+VALUES("Maxda","Arqueira",265,"Feminino", 100, 100, 1563);
